@@ -22,3 +22,7 @@
 
 > daca folosim innerText -> enter este \n
 > daca folosim innerHTML -> enter este </br/>
+
+## DOM Manipulation
+
+> quesrySelectors uses the CSS notations for finding the elements

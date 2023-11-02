@@ -1,9 +1,9 @@
 var myParagraph = document.querySelector("#myParagraph");
+console.log(myParagraph.innerHTML);
 
 function changeParagraphContent() {
   // myParagraph.innerHTML = new Date();
-  myParagraph.innerHTML =
-    '<span style="color:blue; font-size:200px">Test</span> Lorem Ipsum';
+  myParagraph.innerHTML = `<span style="color: blue; font-size:200px"> Test </span> Lorem ipsum `;
 }
 
 var products = [
@@ -40,23 +40,16 @@ var products = [
 ];
 
 var productsDiv = document.querySelector("#products");
+
 function showProducts() {
   var productsHtmlContent = "";
   for (var i = 0; i <= products.length - 1; i++) {
     productsHtmlContent += `
-      <div class="product">
-         <p>${products[i].name}
-         <img src=${products[i].imageURL} />   
-      </div>
-   `;
+    <div class="product">
+      <p>${products[i].name}</p>
+      <img src = ${products[i].imageURL} alt = "product image"> />
+    </div>
+    `;
   }
-
   productsDiv.innerHTML = productsHtmlContent;
 }
-
-// '<div class="product">' +
-// '<img ' +
-// 'src=' +
-// products[0].imageURL +
-// '/>' +
-// '</div>';
