@@ -1,14 +1,16 @@
 var input = document.getElementById("produs");
 var addItemButton = document.getElementById("addButton");
-var productsListElement = document.getElementById("myList");
+var productListElement = document.getElementById("myList");
 
-addItemButton.addEventListener("click", adaugareProdusLaLista);
+addItemButton.addEventListener("click", addItem);
 
-function adaugareProdusLaLista(e) {
+function addItem() {
   var inputValue = input.value;
   console.log(inputValue);
+
   var productListItem = document.createElement("li");
+
   productListItem.innerHTML = inputValue;
   console.log(productListItem);
-  productsListElement.appendChild(productListItem);
+  productListElement.appendChild(productListItem);
 }
